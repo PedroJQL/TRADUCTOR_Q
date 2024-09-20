@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Maya Q'eqchi'</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Traductor de Maya Q'eqchi' a Español</h1>
+        <div class="jumbotron">
+            <h2 class="display-5">Lista de palabras</h2>
+            <ul class="list-group">
+                {{range .}}
+                <li class="list-group-item">{{.Palabra}} - {{.Traduccion}}</li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+/*CONTENIDO*/
+
+
+.main-translate{
+    display: grid;  
+    grid-template-rows: repeat(2,1fr);
+    padding: 2%;
+   
+}
+
+.content-translate{
+    
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    padding: 2%;
+   
+    display: grid;
+    grid-template-rows: 1fr;
+    box-shadow: 10px 10px #004AAD;
+    background-color: #e9f6ff;
+    border-radius: 5px; 
+}
+
+
+.idioma-ingresado{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#004AAD ;
+    font-size: 20px;
+}
+
+.idioma-mostrado{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#004AAD ;
+    font-size: 20px;
+}
+
+
+.content-container-main-translate{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+   
+
+
+    display: grid;
+    grid-template-columns: 1fr  0.2fr  1fr;
+    grid-template-rows:  0.2fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 10px;
+    
+    grid-template-areas: 
+        "idioma-ingresado botonRe idioma-mostrado"
+        "buscador boton mostrar-texto";
+    
+  
+}
+
+.idioma-ingresado{
+    grid-area:idioma-ingresado;
+}
+.idioma-mostrado{
+    grid-area:idioma-mostrado;
+}
+.buscador{
+    grid-area:buscador;
+}
+.boton{
+    grid-area:boton;
+}
+.mostrar-texto{
+    grid-area:mostrar-texto;
+}
+
+
+
+@media (width<800px) 
+{
+    .content-container-main-translate{
+        grid-template-columns:1fr;
+        grid-template-rows:0.2fr 0.2fr 1fr 0.2fr 0.2fr 1fr ;
+        grid-template-areas:
+        "botonRe"
+        "idioma-ingresado"
+        "buscador"
+        "boton"
+        "idioma-mostrado"
+        "mostrar-texto"
+    }
+    
+    .content-translate{
+        height: 100%;
+    }
+    
+    .text-container{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .img-mapa{
+        width: 75%;
+        height: 75%;
+    }
+
+    
+}
+
+.buscador{
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  0.1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 10px;
+    
+    grid-template-areas: 
+        "boton-container"
+        "input-palabra";
+}
+.boton-container{
+    grid-area:boton-container;
+    display: flex;
+    justify-content: flex-end;
+}
+.input-palabra{
+    grid-area:input-palabra;
+}
+
+.mostrar-texto{
+    
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  0.1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 10px;
+    
+    grid-template-areas: 
+        "boton-container2"
+        "get-texto";
+}
+.boton-container2{
+    grid-area:boton-container2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.get-texto{
+    grid-area:get-texto;
+}
+
+
+.input-palabra{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    outline: 1px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: top;
+    border-radius: 5px; 
+    resize: none;
+    overflow:auto;
+    
+}
+
+.get-texto{
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+    outline: 1px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align:top;
+    resize: none;
+    border-radius: 5px; 
+    overflow:auto;
+}
+
+/*Boton para buscar la traducción*/
+
+.boton{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;     
+   
+}
+
+.btn-Buscar{
+    width: 100px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #004AAD;
+    color: #fff;
+    border: 0;
+}
+
+.btn-Buscar:hover{
+    background-color: #fff;
+    color: #004AAD;
+}
+/*Boton para cambiar el idioma*/
+
+.botonRe{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;     
+   
+}
+
+.btn-Cambiar{
+    width: 100px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+}
+.btn-Cambiar:hover{
+    background-color:  #004AAD;
+    color: #004AAD;
+}
+.btn-limpiar{
+    width: 100px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+}
+.btn-limpiar:hover{
+    background-color:  #ea8227;
+}
+.btn-limpiar2{
+    width: 100px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+}
+.btn-limpiar2:hover{
+    background-color:  #ea8227;
+}
+
+
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-mapa{
+    width: 50%;
+    height: 100%;
+    border: red 5px outset;
+    box-sizing: border-box;
+    
+}

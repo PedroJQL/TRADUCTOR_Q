@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradcutor</title>
+    <link rel="stylesheet" type="text/css" href="estilos_globales.css">
+    <link rel="stylesheet" type="text/css" href="estilos-traductor.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container-main">
+            <div class="container-ops">
+                <div class="nav-container-logo">
+                    <a href="index.html"><img  class="logo-ico" src="/imgs/logo.ico"></img></a>
+                </div>
+                
+                <div class="nav-container-voc">
+                    <a href="vocabulario.html"><b>Vocabulario</b></a>
+                </div>
+                
+            </div>
+            <div class="container-ops-info">
+                <div class="nav-container-sobreNosotros">
+                    <a href="Sobre_nosotros.html"><b>Aprende Jugando</b></a>
+                </div>
+                <div class="nav-container-info">
+                    <a href="Info.html"> 🛈</a>
+                </div>
+                <div class="nav-container-menu">
+                    <label for="btnMenu" class="btn-menu" ><img  class="menu" src="/imgs/menu.png"></label>
+
+                </div>
+            </div>
+        </div>
+
+        <input type="checkbox" id="btnMenu">
+
+        <div class="container-menu">    
+            <div class="cont-menu">
+                <nav class="nav-container">
+                    <a href="index.html">Inicio</a>
+                    <a href="vocabulario.html">Vocabulario</a>
+                    <a href="Sobre_nosotros.html">Aprende Jugando</a>
+                    <a href="Info.html">Información</a>
+                 </nav>
+                 <label for="btnMenu" class="icon-xd">X</label>
+            </div>
+          
+        </div>
+    </header>
+
+    <main class="main-translate">
+        <div class="content-translate">
+        
+           
+            <div class="content-container-main-translate">
+                
+                <div class="idioma-ingresado" id="texto1">Español</div>
+                <div class="idioma-mostrado" id="texto2">Q'eqchi'</div>
+
+                <div class="buscador" class="text-container">
+                    <div class="boton-container">
+                        <button title="vaciar campo" class="btn-limpiar"  id="miBoton3" type="button"> <img src="/imgs/boton-x.png"></button>
+                    </div>
+                        <textarea class="input-palabra" type="text" placeholder="Ingrese aquí la palabra" id="palabra"></textarea>
+                        
+                </div>
+
+                <div class="boton">
+                    <button title="buscar palabra" class="btn-Buscar"  id="miBoton" type="button">Buscar</button>
+                   
+                </div>
+                
+                <div class="botonRe">
+                    <button class="btn-Cambiar"  id="miBoton2" type="button"> <img src="/imgs/cambiar.png"></button>
+                </div>
+                
+
+                <div class="mostrar-texto" class="text-container">
+                    <div class="boton-container2">
+                        <button title="vaciar campo" class="btn-limpiar2"  id="miBoton4" type="button"> <img src="/imgs/boton-x.png"></button>
+                    </div>
+                
+                    <textarea class="get-texto" class="translate-area" readonly placeholder="Posibles Resultados" id="texto_qeqchi"></textarea>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="text-section">
+            <div class="info">
+                <h1 id="titulo-section"> Que es el q'eqchi'?</h1>
+                <p id="texto-section">
+                    El Q'eqchi' (escrito también Q'eqchí' en español y q'eqchi' de acuerdo con la ortografía establecida en la Ley de Idiomas Mayas, Decreto 19-2003 y las acciones de estandarización realizadas por la Academia de Lenguas Mayas de Guatemala) es una lengua mayense de la rama quicheana hablada por la etnia del mismo nombre en una gran extensión territorial que abarca Belice, el sur de México, los departamentos de Alta Verapaz, Baja Verapaz, Petén, Izabal, Zacapa y Quiché en Guatemala y parte de El Salvador. Es el idioma de la familia de lenguas mayenses con mayor distribución territorial, además, es también el más hablado de toda la familia mayense.
+
+                El idioma q'eqchi' se originó en lo que actualemente corresponde al departamento de Alta Verapaz, Guatemala, hay hablantes de q'eqchi' en Belice, México, otras partes de Guatemala y más recientemente en El Salvador, producto de históricas migraciones.5​ Es hablado en su mayoría en áreas rurales de estos países.
+                </p>
+
+                <p  id="texto-section">
+                    El Q’eqchi’ actualmente ocupa un área geográficamente considerablemente más extensa que otros idiomas mayenses.
+
+                    En México se habla principalmente en el estado de Campeche en las localidades de Quetzal-Etzná y Los Laureles del municipio de Campeche, en Maya Tecún y Santo Domingo Kesté del municipio de Champotón y en el estado de Quintana Roo y Chiapas.6​
+
+                    El Q’eqchi’ abarca las Verapaces, Petén, Izabal y el oriente de Quiché, así como Quintana Roo, Campeche, Tabasco, Copán, la parte sur de Belice, la parte norte de Honduras y en la actualidad existe un gran número de personas que vive en Estados Unidos. En Guatemala, es el idioma indígena con mayor porcentaje de hablantes monolingües.
+                </p>
+                
+                
+            </div>
+        </div>
+        <div class="img-container">
+            <img class="img-mapa" src="/imgs/mapa.png">
+        </div>
+    
+    </main>
+    <footer>
+        <div class="container-footer">
+
+            <div class="texto-footer">
+                <p>Todas las imágenes mostradas son de carácter ilustrativo.</p>
+            </div>
+            <div class="texto-footer">
+                <p>Copyright © 2024 LEARN EASY Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        
+    </script>
+</body>
+</html>
